@@ -1,15 +1,12 @@
 ---
-title: Probleemstelling
+title: Description of the problem
 ---
 
-# Probleemstelling
+# Description of the problem
 
-<!-- TODO: 
+Throughout the year we see trees growing, changing color and shape. Wouldn't it be great to know which tree you're looking at?
+Nobody has the time to look through a book or website which shows a list of al the trees with its leaves. This project could help you identify which tree a certain leaf comes from.
 
-Beschrijf de probleemstelling in minimum 200 woorden. 
+This project is for everyone, but you do need a bit of technological knowledge.
 
-* Wat is het probleem dat jullie proberen aan te pakken?
-* Wat is de maatschappelijke context (indien relevant)?
-* Wie is de doelgroep van jullie project?
-
--->
+This project shows you how you can process images using Matlab, train a deep learning model using Keras on python and make predictions using that model with new images. Which is great for beginners who want to learn deep learning using Keras.
