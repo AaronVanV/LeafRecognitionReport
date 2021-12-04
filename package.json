@@ -1,13 +1,13 @@
 {
-  "name": "ai-programming",
+  "name": "LeafRecognitionReport",
   "version": "0.0.1",
-  "description": "Report for the AI programming project",
+  "description": "Report for the Deep Learning Leaf Recognition project",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "keywords": [],
-  "author": "Piet Cordemans, Franky Loret",
+  "author": "Aaron Van Vyve, Thomas Luca, Jens Cocquyt",
   "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
   "dependencies": {},
   "devDependencies": {
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ai-programming-21/report-template"
+    "url": "git+https://github.com/AaronVanV/LeafRecognitionReport"
   },
   "bugs": {
     "url": "/issues"

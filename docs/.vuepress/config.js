@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Project AI Programming',
-  description: 'Report for the AI programming project',
+  title: 'LeafRecognitionReport',
+  description: 'Report for the Deep Learning Leaf Recognition project',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -17,7 +17,7 @@ module.exports = {
       ['/conclusie/', 'Conclusie'],
       ['/bibliografie/', 'Bibliografie']
     ],
-    repo: 'https://github.com/ai-programming-21/report-template',
+    repo: 'https://github.com/AaronVanV/LeafRecognitionReport',
     docsDir: 'docs',
     docsBranch: 'master'
   },
