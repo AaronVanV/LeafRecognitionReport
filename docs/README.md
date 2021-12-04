@@ -22,7 +22,9 @@ title: Home
     * Gebruik tabellen en afbeeldingen om zaken te verduidelijken. Zorg dat alle afbeeldingen lokaal in de repository staan. Link niet naar afbeeldingen die op het internet staan.
     * Gebruik de VScode plugin Code Spell Checker (https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) en de Dutch - Code Spell Checker (https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-dutch). Zorg ervoor dat alle aangeduide taalfouten nagekeken zijn.
  -->
-Abstract
+
+## Abstract
+
 <!-- TODO Plaats hier in abstract in een block quote -->
 <!-- Het abstract is een samenvatting van de hele tekst (probleemstelling, doelstelling, uitwerking, conclusie) in 150 tot maximum 200 woorden.-->
 
