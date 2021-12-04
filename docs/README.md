@@ -23,11 +23,24 @@ title: Home
     * Gebruik de VScode plugin Code Spell Checker (https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) en de Dutch - Code Spell Checker (https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-dutch). Zorg ervoor dat alle aangeduide taalfouten nagekeken zijn.
  -->
 
+Welcome to our Leaf Recognition project.
+
+In this report you can find explanations of the code, how to use it and extra information about the project.
+
 ## Abstract
 
 <!-- TODO Plaats hier in abstract in een block quote -->
 <!-- Het abstract is een samenvatting van de hele tekst (probleemstelling, doelstelling, uitwerking, conclusie) in 150 tot maximum 200 woorden.-->
 
-## Over ons
+## About us
 
-<!-- TODO korte beschrijving: wie zijn de teamleden?-->
+We are third year students in Electronics-IT at Vives, this is the report of our project for the subject Deep Learning.
+We got the assignment make a project that uses deep learning and preferably Matlab.
+
+Students:
+
+- Aaron Van Vyve [Github](https://github.com/AaronVanV/) [Report link](https://github.com/DeepLearning-2021-2022/deep-learning-project-report-AaronVanV)
+
+- Thomas Luca [Github](https://github.com/ThomasLuca/) [Report link](https://github.com/DeepLearning-2021-2022/deep-learning-project-report-ThomasLuca)
+
+- Jens Cocquyt [Github](https://github.com/Jens-C/) [Report link](https://github.com/DeepLearning-2021-2022/deep-learning-project-report-Jens-C)
