@@ -36,7 +36,7 @@ The link to the code: [LeafRecognitionCode](https://github.com/AaronVanV/LeafRec
 
 ## About us
 
-We are third year students in Electronics-IT at Vives, this is the report of our project for the subject Deep Learning.
+We are third year students in Electronics-IT at Vives Bruges, this is the report of our project for the subject Deep Learning.
 We got the assignment make a project that uses deep learning and preferably Matlab.
 
 Students:
