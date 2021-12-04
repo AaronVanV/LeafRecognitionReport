@@ -1,8 +1,8 @@
 ---
-title: Uitbreiding
+title: Expansion
 ---
 
-# Mogelijke uitbreidingen
+# Possible Expansions
 
 <!-- TODO: 
 

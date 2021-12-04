@@ -1,8 +1,8 @@
 ---
-title: Uitwerking
+title: Result
 ---
 
-# Uitwerking
+# Result
 
 <!-- TODO: 
 

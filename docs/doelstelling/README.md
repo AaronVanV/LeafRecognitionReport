@@ -1,8 +1,8 @@
 ---
-title: Doelstelling
+title: Objective
 ---
 
-# Doelstelling
+# Objective
 
 <!-- TODO: 
 

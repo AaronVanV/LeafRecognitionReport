@@ -9,13 +9,13 @@ module.exports = {
     ],
     sidebar: [
       ['/', 'Home'],
-      ['/probleemstelling/', 'Probleemstelling'],
-      ['/doelstelling/', 'Doelstelling'],
-      ['/analyse/', 'Analyse'],
-      ['/uitwerking/', 'Uitwerking'],
-      ['/uitbreiding/', 'Uitbreiding'],
-      ['/conclusie/', 'Conclusie'],
-      ['/bibliografie/', 'Bibliografie']
+      ['/probleemstelling/', 'Description of the problem'],
+      ['/doelstelling/', 'Objective'],
+      ['/analyse/', 'Analysis'],
+      ['/uitwerking/', 'Result'],
+      ['/uitbreiding/', 'Expansion'],
+      ['/conclusie/', 'Conclusion'],
+      ['/bibliografie/', 'Bibliography']
     ],
     repo: 'https://github.com/AaronVanV/LeafRecognitionReport',
     docsDir: 'docs',
