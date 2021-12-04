@@ -27,7 +27,7 @@ Welcome to our Leaf Recognition project.
 
 In this report you can find explanations of the code, how to use it and extra information about the project.
 
-The link to the code: [LeafRecognitionCode](https://github.com/AaronVanV/LeafRecognitionReport)
+The link to the code: [LeafRecognitionCode](https://github.com/AaronVanV/LeafRecognitionCode)
 
 ## Abstract
 
