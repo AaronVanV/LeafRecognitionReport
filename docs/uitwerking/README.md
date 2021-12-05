@@ -89,8 +89,10 @@ So lets go back to the code, underneath those parameters we see some code which 
 
 ![ResultTrainDataFormat](./assets/ResultTrainDataFormat.png)
 
-Then we see al the layers, the model uses batch Normalization as regularization method and relu as Activation function.
+Then we see al the layers, the model uses 2DConvolution, batch Normalization as regularization method and relu as Activation function.
 We won't explain every layer, but this image gives you the idea how the layers work.
+
+![ResultTrainLayers2](./assets/ResultTrainLayers2.png)
 
 ![ResultTrainLayers](./assets/ResultTrainLayers.png)
 
