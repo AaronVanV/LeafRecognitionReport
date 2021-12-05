@@ -17,10 +17,12 @@ Maak eerst een overzicht van alle onderdelen en geef een algemene beschrijving. 
 
 ### Set up
 
+We would recommend [creating a new conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) before installing these packages.
+
 To install the packages needed for training and predictions, you can execute the following command:
 
 ```cmd
-pip install -r .\requirements.txt
+pip install -r ./requirements.txt
 ```
 
 or you can look at the requirements.txt file and manually install them separately:
@@ -37,21 +39,21 @@ Now its time for some tedious copy paste work. We are going to put all the image
 First we create a folder named "data", in that folder we create 2 more folders: a "train" folder and a "validation" folder.
 In the "train" folder we are going to create a folder for every species, which is 15, we name them "l1", "l2",... .
 
-![ResultTrainIMG](..\assets\ResultTrainIMG.png)
+![ResultTrainIMG](./assets/ResultTrainIMG.png)
 
 In those folders we are going to put 60 of the 75 images from every species in their responding folders, so in folder l1 there should be l1nr001 to l1nr060.
 
-![ResultTrainIMGl](..\assets\ResultTrainIMGl.png)
+![ResultTrainIMGl](./assets/ResultTrainIMGl.png)
 
-![ResultTrainIMGl2](..\assets\ResultTrainIMGl2.png)
+![ResultTrainIMGl2](./assets/ResultTrainIMGl2.png)
 
 In the validation we also make make folders l1 to l15, in those we put the remaining 15 images per species, so in l1 there should be l1nr061 to l1nr075.
 
-![ResultTrainIMGl3](..\assets\ResultTrainIMGl3.png)
+![ResultTrainIMGl3](./assets/ResultTrainIMGl3.png)
 
 Then make sure the images are correctly distributed in folders, there should  be a "train" and a "validation" folder, in those folders every species should be in a different folder.
 
-![ResultTrainIMGl4](..\assets\ResultTrainIMGl4.png)
+![ResultTrainIMGl4](./assets/ResultTrainIMGl4.png)
 
 Now that everything is ready to run, lets explain the code.
 
@@ -63,34 +65,34 @@ Let's get into the code.
 
 First we see all the imports of the installed packages.
 
-![ResultTrainingImports](..\assets\ResultTrainingImports.png)
+![ResultTrainingImports](./assets/ResultTrainingImports.png)
 
 Under that we see the parameters ,the images are processed to 324x324 in Matlab, so we need to tell the model the inputted images will be that size, after that we tell the model where to find the training and validation images. The samples are how many images there are in each folder. In de training folder, there are 15 species and each species contains 60 images, so 15*60=900. And the same goes for the validation folder, but in that folder every species has 15 images, so 15*15=225. We found that 100 epochs is a good amount of training. The batch size should be dividable by 900, we found that a high batch size of 45 gave a better result.
 
-![ResultTrainingParams](..\assets\ResultTrainingParams.png)
+![ResultTrainingParams](./assets/ResultTrainingParams.png)
 
 Here are some of the tests we did on the batching.
 
 First we tried a batch size of 10:
 
-![ResultTrainBatch10](..\assets\ResultTrainBatch10.png)
+![ResultTrainBatch10](./assets/ResultTrainBatch10.png)
 
 Then a batch size of 20:
 
-![ResultTrainBatch20](..\assets\ResultTrainBatch20.png)
+![ResultTrainBatch20](./assets/ResultTrainBatch20.png)
 
 We were satisfied with the batch size of 45:
 
-![ResultTrainBatch45](..\assets\ResultTrainBatch45.png)
+![ResultTrainBatch45](./assets/ResultTrainBatch45.png)
 
 So lets go back to the code, underneath those parameters we see some code which defines how the input is shaped. It will have 3 channels: Red, Green and blue, which doesn't really matter since we greyscaled our images.
 
-![ResultTrainDataFormat](..\assets\ResultTrainDataFormat.png)
+![ResultTrainDataFormat](./assets/ResultTrainDataFormat.png)
 
 Then we see al the layers, the model uses batch Normalization as regularization method and relu as Activation function.
 We won't explain every layer, but this image gives you the idea how the layers work.
 
-![ResultTrainLayers](..\assets\ResultTrainLayers.png)
+![ResultTrainLayers](./assets/ResultTrainLayers.png)
 
 Now that the layers are defined, we tell the model how to compile and how to process the images for input.
 
@@ -100,16 +102,28 @@ Then we train the model.
 
 The results like accuracy and loss are written in a csv file by the csv logger.
 
-![ResultTrainCompile](..\assets\ResultTrainCompile.png)
+![ResultTrainCompile](./assets/ResultTrainCompile.png)
 
 Then we save the trained model to use it in the predictions.
 
-![ResultTrainSave](..\assets\ResultTrainSave.png)
+![ResultTrainSave](./assets/ResultTrainSave.png)
 
 And in the end we plot the accuracy and loss of model during the training by reading out the csv file.
 
-![ResultTrainPlotter](..\assets\ResultTrainPlotter.png)
+![ResultTrainPlotter](./assets/ResultTrainPlotter.png)
 
 A plot will look like this:
 
-![ResultTrainBatch45](..\assets\ResultTrainBatch45.png)
+![ResultTrainBatch45](./assets/ResultTrainBatch45.png)
+
+## Prediction with trained Keras model on python
+
+### Set up prediction
+
+To set up the prediction we just have to make a folder in the project "img" in that folder we create a folder with name of choice, we chose "test", and in that "test" folder we can put the images we want predictions for, make sure those pictures have been processed by Matlab to have the right size and color.
+
+![ResultPredSetup](./assets/ResultPredSetup.png)
+
+At the top we see the imported packages.
+
+![ResultPredImport](./assets/ResultPredImport.png)
