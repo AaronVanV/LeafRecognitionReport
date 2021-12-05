@@ -44,7 +44,7 @@ Here is the example of an oak leaf (Quercus) from this dataset:
 ## Neural Network
 
 For the AI-model we will make a CCN (Convolutional Neural network). CCN's are the most effective type of networks for analyzing images.
-In order to get decent results, the network must contain multiple hidden layers. As activation function on these hidden layers we'll use Rectified Linear Unit (ReLU). And as activation function on the output layer, we'll use Softmax because it pushes the result in favor of only one specific output node. This is needed because the result can only one of the fifteen different species. Finally we'll also train the model in batches because it improves the generalization and the training speed of the neural network.
+In order to get decent results, the network must contain multiple hidden layers. As activation function on these hidden layers we'll use Rectified Linear Unit (ReLU). And as activation function on the output layer, we'll use Softmax because it pushes the result in favor of only one specific output node. This is needed because the result can only be one of the fifteen different species. Finally we'll also train the model in batches because it improves the generalization and the training speed of the neural network.
 
 ## Tools
 
