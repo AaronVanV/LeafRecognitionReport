@@ -127,3 +127,21 @@ To set up the prediction we just have to make a folder in the project "img" in t
 At the top we see the imported packages.
 
 ![ResultPredImport](./assets/ResultPredImport.png)
+
+Then we load in the trained model and define the size of the new input images. It will be 324x324, because it went through the Matlab image processing.
+
+![ResultPredLoad](./assets/ResultPredLoad.png)
+
+After that we put the images through the generator so the model will take them as input, the generator is the same as in the training code. The only difference is we set the class_mode to None, because the input doesn't need to be labeled.
+
+![ResultPredGenerator](./assets/ResultPredGenerator.png)
+
+Then we put the input images into the model and let the model predict.
+
+The predictions the model returns is an array of 15 numbers between 0 and 1, that stands for the certainty of the which species it think it is. Then we look at which certainty is the highest and its responding species.
+
+![ResultPredOutput](./assets/ResultPredOutput.png)
+
+The output will look like this.
+
+![ResultPredConsole](./assets/ResultPredConsole.png)
