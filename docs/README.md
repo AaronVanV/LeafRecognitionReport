@@ -33,6 +33,8 @@ The link to the code: [LeafRecognitionCode](https://github.com/AaronVanV/LeafRec
 
 <!-- TODO Plaats hier in abstract in een block quote -->
 <!-- Het abstract is een samenvatting van de hele tekst (probleemstelling, doelstelling, uitwerking, conclusie) in 150 tot maximum 200 woorden.-->
+Wouldn't it be great to know with species of tree a certain leaf belongs to?
+We were able to create a project that recognises 15 tree species by its leaves. This realised by first processing the images of the leaves from a Swedish dataset using Matlab, then putting those processed images through a python Keras training model which trains to recognise the 15 Swedish tree species. Then you can take a new picture of a leaf in those 15 species, run it through the image processing Matlab code and let the predition code run on that processed image. It will return a prediction of the species of the inputted image with a percentage of how certain the model is. Some expansions on the project would be to increase the amount of tree species and some automation of the Matlab image processor, so you the prediction would run in 1 smooth motion.
 
 ## About us
 
