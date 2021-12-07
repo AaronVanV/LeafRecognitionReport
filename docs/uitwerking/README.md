@@ -195,7 +195,7 @@ After that we put the images through the generator so the model will take them a
 
 Then we put the input images into the model and let the model predict.
 
-The predictions the model returns is an array of 15 numbers between 0 and 1, that stands for the certainty of the which species it think it is. Then we look at which certainty is the highest and its responding species.
+The predictions the model returns is an array of 15 numbers between 0 and 1, that stands for the certainty of the which species it think it is. Then we look at which certainty is the highest and its responding species. The order of the nodes are not node1 = leaf1, ..., node15=leaf15. The model goes in the following order: 1, 10, 11, 12, 13, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9. It apparently looks at the first digit of the number when ordering the output nodes. The model returns an array of predictions for every node, the index of an array starts at 0, so output index 0 will respond to l1 and index 2 will respond to l10.
 
 ![ResultPredOutput](./assets/ResultPredOutput.png)
 
