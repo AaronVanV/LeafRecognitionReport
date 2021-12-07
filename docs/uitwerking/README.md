@@ -26,7 +26,7 @@ before:
 
 ### Before
 
-![after](./assets/./assets/l1nr001before.png)
+![after](./assets/l1nr001before.png)
 
 ### After
 
