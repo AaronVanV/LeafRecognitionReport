@@ -17,12 +17,12 @@ The dataset contains all the images but they all vary in resolution and for the 
 
 The first part of the program searches for the objects in the image
 
-![firstpart](./assets/preparation1.PNG)
+![firstpart](./assets/preparation1.png)
 
 The second part of the code crops the image according to what the largest feature is from the previous code. this we then converted to grayscale and added white borders on the sides so the image would fit a resolution of 324 pixels by 324 pixels.
 before:
 
-![secondpart](./assets/preparation2.PNG)
+![secondpart](./assets/preparation2.png)
 
 ### Before
 
