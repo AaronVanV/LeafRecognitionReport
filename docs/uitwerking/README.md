@@ -96,6 +96,30 @@ We won't explain every layer, but this image gives you the idea how the layers w
 
 ![ResultTrainLayers](./assets/ResultTrainLayers.png)
 
+2DConvolution simplify the 2D images into smaller 2D patches by combining pixels with their neighboring pixels using multiple filters.
+
+![2Dconvo](./assets/2Dconvo.gif)
+
+The Relu activation function turns negative values into 0. We want to avoid negative values because the model learns using mathematical formulas. If we add a high number with a negative number , we want to keep those high numbers to find the best results when training.
+
+![relu](./assets/relu.png)
+
+Maxpooling takes the biggest values that resulted from the 2d convolution after the Relu activation from every filter for every patch.
+
+![relu](./assets/maxpool.jpg)
+
+Flatten turns the 2D values into 1D.
+
+![relu](./assets/flatten.png)
+
+Dense means that every neuron of the layer is connected to every neuron of the next layer, this most commonly used in Machine Learning. The number between the brackets is how many neurons a layer contains.
+
+![dense](./assets/dense.png)
+
+BatchNormalization is a method used to make artificial neural networks faster and more stable through normalization of the layers' inputs by re-centering and re-scaling.
+
+And lastly Dropout is a technique that sets half (the 0.5) of the neurons on the layer to 0, to prevent overfitting.
+
 Now that the layers are defined, we tell the model how to compile and how to process the images for input.
 
 The train and validation generators take the images fom their folders and use the folder they come from as label, so all the images in folder "l1" will have the label "l1". We tell the model to classify by category (15 species)
