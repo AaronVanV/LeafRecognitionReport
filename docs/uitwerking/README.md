@@ -13,6 +13,25 @@ Maak eerst een overzicht van alle onderdelen en geef een algemene beschrijving. 
 
 ## Image Processing with Matlab
 
+The dataset contains all the images but they all vary in resolution and for the training model we need them to be black and white, in order to make all the images uniform we created a [matlab program](https://github.com/ThomasLuca/leaf-dataset-preparation/blob/main/ImageManipulation.m) to do this.
+
+The first part of the program searches for the objects in the image
+
+![firstpart](./assets/preparation1.png)
+
+The second part of the code crops the image according to what the largest feature is from the previous code. this we then converted to grayscale and added white borders on the sides so the image would fit a resolution of 324 pixels by 324 pixels.
+before:
+
+![secondpart](./assets/preparation2.png)
+
+### Before
+
+![after](./assets/./assets/l1nr001before.png)
+
+### After
+
+![after](./assets/l1nr001.png)
+
 ## Training model with Keras on python
 
 ### Set up
@@ -84,6 +103,14 @@ Then a batch size of 20:
 We were satisfied with the batch size of 45:
 
 ![ResultTrainBatch45](./assets/ResultTrainBatch45.png)
+
+We also did some tests with adding more nodes to the network, in layers 3,4,5 we added 128 nodes instead of 64 with this result:
+
+![ResultTrain128nodes](./assets/128nodes.png)
+
+Bumping it up to 256 nodes did not improve the accuracy further.
+
+![ResultTrain256nodes](./assets/256nodes.png)
 
 So lets go back to the code, underneath those parameters we see some code which defines how the input is shaped. It will have 3 channels: Red, Green and blue, which doesn't really matter since we greyscaled our images.
 
