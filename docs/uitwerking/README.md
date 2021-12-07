@@ -13,13 +13,17 @@ Maak eerst een overzicht van alle onderdelen en geef een algemene beschrijving. 
 
 ## Image Processing with Matlab
 
+The dataset can be dowloaded from this site:
+[dataset](https://www.cvl.isy.liu.se/en/research/datasets/swedish-leaf/?fbclid=IwAR3IVEJSLrCzPzwdaPGn5woy8RK9LIJceCUCHP0d7XppzqRDRHSRnJPOqU4)
+Then all the images of all the leaf types have to be put in a folder called "dataset" inside the folder where the matlab script is located.
+
 The dataset contains all the images but they all vary in resolution and for the training model we need them to be black and white, in order to make all the images uniform we created a [matlab program](https://github.com/ThomasLuca/leaf-dataset-preparation/blob/main/ImageManipulation.m) to do this.
 
 The first part of the program searches for the objects in the image
 
 ![firstpart](./assets/preparation1.png)
 
-The second part of the code crops the image according to what the largest feature is from the previous code. this we then converted to grayscale and added white borders on the sides so the image would fit a resolution of 324 pixels by 324 pixels.
+The second part of the code crops the image according to what the largest feature is from the previous code. This we then converted to grayscale and added white borders on the sides so the image would fit a resolution of 324 pixels by 324 pixels.
 before:
 
 ![secondpart](./assets/preparation2.png)
