@@ -17,9 +17,3 @@ The application also needs to be deployed on mobile devices so that users can us
 ## Accuracy
 
 Finally, to improve the accuracy it would be nice if the neural network could adapt if a user spotted a wrong prediction. This means that the neural network isn't restricted to the pre-existing dataset anymore. Instead, it could also learn with the images that are taken by the users.
-
-<!-- TODO: 
-
-In dit onderdeel vermeld je in minimum 200 woorden alle zaken die je niet hebt kunnen uitwerken.
-
--->
