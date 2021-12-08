@@ -15,3 +15,11 @@ title: Bibliography
 [Wiki BatchNormalization](https://en.wikipedia.org/wiki/Batch_normalization)
 
 [object extraction](https://stackoverflow.com/questions/30086895/extract-object-from-image-in-matlab)
+
+[Keras predictions](https://stackoverflow.com/questions/43469281/how-to-predict-input-image-using-trained-model-in-keras)
+
+[Github ralavo](https://github.com/ralavo/Leaf-Classification)
+
+[Tensorflow image recognition](https://pythoncursus.nl/image-recognition-python/)
+
+[How to save and load a model](https://www.tensorflow.org/guide/keras/save_and_serialize)
